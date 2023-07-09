@@ -216,7 +216,7 @@
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
-    margin: 0 0 0 2rem(--nav-item-margin);
+    margin: var(--nav-item-margin);
   }
   
   .nav .nav-link {
@@ -244,6 +244,10 @@
   .nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
+  }
+
+  :root {
+    --nav-item-margin: 0 0 0 2rem;
   }
   
   /* Header
