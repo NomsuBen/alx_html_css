@@ -208,7 +208,7 @@
   }
 
   .nav .nav-item + .nav-item{
-    margin: 0 0 0 2rem(--nav-item-margin);
+    margin: (0 0 0 2rem);
   }
   
   .nav .nav-item {
