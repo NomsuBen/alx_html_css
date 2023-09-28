@@ -1,0 +1,31 @@
+<!--
+    Create an HTML form for a basic contact form with the following requirements:
+
+Include fields for the user’s name, email address, and message.
+Apply appropriate HTML5 validation attributes to ensure the name and email fields are required and that the email field accepts a valid email format.
+Use a <textarea> element for the message field to allow for a long description and not limit it to just one line.
+Add a submit button to submit the form.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Contact Form</h1>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

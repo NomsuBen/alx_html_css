@@ -1,0 +1,36 @@
+<!--
+    Build an HTML form for a subscription with the following criteria:
+
+Include fields for the user’s name, email, and subscription preference (monthly, yearly).
+Utilize radio buttons for the subscription preference and ensure that the user can only select one option.
+Apply HTML5 validation to ensure all fields are required and the email field accepts a valid email format.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscription Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Subscription Form</h1>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label>Subscription Preference:</label>
+    <label for="monthly">
+      <input type="radio" id="monthly" name="subscription" value="monthly" required> Monthly
+    </label>
+    <label for="yearly">
+      <input type="radio" id="yearly" name="subscription" value="yearly" required> Yearly
+    </label>
+    
+    <input type="submit" value="Subscribe">
+  </form>
+</body>
+</html>

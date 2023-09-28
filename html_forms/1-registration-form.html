@@ -1,0 +1,43 @@
+<!--
+Design an HTML registration form with the following specifications:
+
+Include fields for the user’s name, email, password, and confirm password.
+Implement HTML5 validation attributes to ensure all fields are required,
+And the email field accepts a valid email format, and the password fields match.
+Use appropriate input types (e.g., email, password) and labels for each field.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/1-styles.css">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <form>
+    <ul>
+      <li>
+        <label for="name">Name:<span aria-label="required">*</span></label>
+        <input type="text" name="username" id="name" required>
+      </li>
+      <li>
+        <label for="e-mail">Email:<span aria-label="required">*</span></label>
+        <input type="email" name="useremail" id="e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      </li>
+      <li>
+        <label for="user-password">Password:<span aria-label="required">*</span></label>
+        <input type="password" name="userpassword" id="user-password">
+      </li>
+      <li>
+        <label for="confirm-password">Confirm password:<span aria-label="required">*</span></label>
+        <input type="password" name="userpassword" id="confirm-password">
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>
